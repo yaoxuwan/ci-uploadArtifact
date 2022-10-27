@@ -76,7 +76,7 @@ class AtomHttpClient {
         return Request.Builder().url(url).headers(getAllAtomHeaders(headers).toHeaders()).post(requestBody).build()
     }
 
-    fun buildAtomPut(path: String): Request? {
+    fun buildAtomPut(path: String): Request {
         return buildAtomPut(path, mutableMapOf())
     }
 
